@@ -1,0 +1,34 @@
+{
+  "configurations" : [
+    {
+      "name" : "performance",
+      "options" : {
+        "addressSanitizer" : {
+          "enabled" : true
+        },
+        "mallocGuardEdgesEnabled" : true,
+        "mallocScribbleEnabled" : true
+      }
+    },
+    {
+      "name" : "load",
+      "options" : {
+        "guardMallocEnabled" : true,
+        "mainThreadCheckerEnabled" : false
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:XCTestPlan.xcodeproj",
+        "identifier" : "9B0E393A22A6EB5400F666A1",
+        "name" : "XCTestPlanUITests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -1,0 +1,44 @@
+{
+  "configurations" : [
+    {
+      "name" : "smoke-uk",
+      "options" : {
+        "language" : "en-GB",
+        "locationScenario" : {
+          "identifier" : "London, England",
+          "referenceType" : "built-in"
+        },
+        "region" : "GB",
+        "testExecutionOrdering" : "lexical"
+      }
+    },
+    {
+      "name" : "Regression-usa",
+      "options" : {
+        "addressSanitizer" : {
+          "enabled" : true
+        },
+        "language" : "en",
+        "locationScenario" : {
+          "identifier" : "San Francisco, CA, USA",
+          "referenceType" : "built-in"
+        },
+        "region" : "US",
+        "testExecutionOrdering" : "random"
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "codeCoverage" : false
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:XCTestPlan.xcodeproj",
+        "identifier" : "9B0E393A22A6EB5400F666A1",
+        "name" : "XCTestPlanUITests"
+      }
+    }
+  ],
+  "version" : 1
+}
